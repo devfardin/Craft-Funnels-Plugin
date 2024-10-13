@@ -1,0 +1,127 @@
+.most_popular_post{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.most_popular_post{
+    border: 1px solid #005CEF30;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.most_popular_posts_row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    align-items: center;
+}
+.popular_post_thumb img{
+    border-radius: 6px;
+}
+.latest-posts__text{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.latest-posts__info {
+    flex-grow: 1;
+}
+a.most-popular-posts__post__title {
+    color:  #010101;
+    font-family: Gilroy;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all .4s;
+    line-height: 1em;
+}
+.most-popular-posts__post__title:hover{
+    color: #298D06;
+}
+.portfolio_post_category{
+    color:  #010101 !important;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+    border-radius: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.10);
+    padding: 4px 10px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.most_popular_post_info_box{
+    display: none;
+}
+
+
+.post_published_time h3{
+    color: #908E8E;
+    font-family: Gilroy;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 0;
+}
+
+.most_popular_post_author_profile img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.author_box{
+    display: flex;
+    gap:4px;
+    align-items: center;
+
+}
+.auther_display_name{
+color: var(--Black, #010711);
+font-family: Gilroy;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 16px */
+opacity: 0.8;
+margin: 0;
+}
+
+@media only screen and (min-width: 414px) {
+    .most_popular_post_info_box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+@media only screen and (min-width: 540px) {
+    .most_popular_post{
+        justify-content: flex-start;
+    }
+    .most_popular_post_info_box{
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .most_popular_posts_row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+    
+}
+
+@media only screen and (min-width: 992px) {
+ 
+}
+@media only screen and (min-width: 1024px) {
+    .most_popular_posts_row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

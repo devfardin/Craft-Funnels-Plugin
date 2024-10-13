@@ -1,0 +1,144 @@
+.cf-slider-swiper {
+    background: url('../images/testimonial-bg.png');
+    /* background-position: top left bottom; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    }
+    .cf-slide__content {
+        flex-basis: 60%;
+    }
+
+  .cf-slide__content h2{
+    color: #010101;
+    font-family: Avion;
+    font-size: 40px;
+    font-weight: 300;
+    position: relative;
+  }
+  .client_position{
+    color: #00163A !important;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2em;
+  }
+  .cf-slide__content h2::after {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 0px;
+    width: 36%;
+    height: 2px;
+    background: #010101;
+    }
+  .cf-slide__content p{
+    color: #010101;
+    font-family: Gilroy;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em; 
+     }
+
+  /* Slide media */
+  .cf-slide__media {
+    position: relative;
+    padding: 30px;
+    flex-basis: 50%;
+    }
+    .cf-slide__media-wrapper {
+        position: relative;
+    }
+  
+    span.cf-slide__media-frame {
+    position: absolute;
+    display: block;
+    border: 2px solid #298D06;
+    width: 100%;
+    height: 100%;
+    top: -20px;
+    right: -20px;
+    z-index: 99;
+    }
+    .cf-slide__media-wrapper img {
+        position: relative;
+        z-index: 999999;
+    }
+
+    /* Slide arrow style */
+    .cf-slide__pagination {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: -21px;
+    }
+    .button-prev, .button-next{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .cf-slide__pagination .swiper-pagination {
+        position: revert;
+        padding: 0;
+        font-size: 22px;
+    }
+    .cf-slide__pagination .swiper-pagination-current {
+        color: #010101;
+        font-family: Manrope;
+        font-size: 75px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .swiper-button-disabled svg path {
+        fill: #808080;
+    }
+
+  /*Slider style */
+  
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+  
+  
+  .swiper {
+    height: 100%;
+    padding: 10px 0px 30px 50px;
+  }
+  
+
+
+ 
+  
+  /* Responsive Design */
+  
+  @media (min-width: 768px) {
+    .swiper-slide {
+        flex-direction: row;
+        }
+        .cf-slide__content p{
+          font-size: 21px; 
+           }
+  }
+
+  @media (min-width: 992px) {
+        .cf-slide__content p{
+          font-size: 24px; 
+           }
+  }
+
+  @media (min-width: 1200px) {
+    .swiper-slide {
+        flex-direction: row;
+        }
+  }
